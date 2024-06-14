@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import React, { useState } from "react";
+import "./App.css";
+// import { Button, Counter, Application, Greet, Skills } from "./modals/index";
+import { AppProviders } from "./providers/app-providers";
+import { MuiMode } from "./components/mui/mui-mode";
+import { CounterTwo } from "./components/counter-two/Counter-two";
 
 function App() {
+  // const [label, setLabel] = useState("Label 1");
+  // const [flag, setFlag] = useState(false);
+  // const skills = ["Html", "CSS", "Javascript"];
+
+  // const handleClick = (): void => {
+  //   setFlag(!flag);
+  //   if (flag) {
+  //     setLabel("Label 2");
+  //     return;
+  //   }
+  //   setLabel("Label 1");
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <AppProviders>
+    //   <div className="App">
+    //     <MuiMode />
+    //   </div>
+    // </AppProviders>
+    <>
+      <CounterTwo count={0} />
+    </>
   );
 }
 
